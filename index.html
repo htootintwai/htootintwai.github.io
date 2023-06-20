@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Htoo Tint Wai - Portfolio</title>
 
-
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
@@ -20,17 +19,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
 
     <!-- Slide Show For Projects -->
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
     <link rel="stylesheet" href="cus.css">
+
 </head>
 
 <body id="body" class="about-page">
 
-    <!-- Loading
+    <!-- Loading -->
     <div id="loading-screen">
-        <span id="loading-text">Htoo Tint Wai</span>
-    </div> -->
+        <h1 id="l-name">Htoo Tint Wai</h1>
+    </div>
 
     <!-- NAVBAR -->
     <nav class="nav-container py-3 mb-3 d-block" id="main-nav">
@@ -59,16 +59,16 @@
     </nav>
 
     <!-- HOME -->
-    <div class="container py-3 my-5 pt-3" id="home">
+    <div class="container py-3 my-5 pt-3" id="home" style="width: 1366px; height: 758px;">
         <div class="">
             <div class="d-flex justify-content-center align-items-center">
                 <span class="text-center text-middle text-light" style="font-size: 120px;">I'm A Web Developer & Network
                     Engineer</span>
             </div>
             <div class="d-flex justify-content-center align-items-center mt-5 mb-5">
-                <button class="dig-button">Dig My Universe</button>
+                <a href="#projects"><button class="dig-button">Dig My Universe</button></a>
             </div>
-            <div class="">
+            <div class="mb-5">
                 <div class="social-icons">
                     <a href="https://www.instagram.com/htoo_tint_wai/" target="_blank" class="social-icon"><i
                             class="fab fa-instagram"></i></a>
@@ -78,42 +78,48 @@
                             class="fas fa-envelope"></i></a>
                     <a href="https://www.linkedin.com/in/htoo-tint-wai-911433190" target="_blank" class="social-icon"><i
                             class="fab fa-linkedin-in"></i></a>
-
                 </div>
+
             </div>
+            <h2 class="text-center text-light mt-3">Let's work together</h2>
         </div>
     </div>
 
     <!-- ABOUT -->
-    <div class="container py-3 my-3 pt-5 mt-5" id="about">
-        <div class="row">
+    <div class="container py-3 my-3 pt-5 mt-3" id="about">
+        <div class="row align-items-center">
             <div class="col-5">
                 <img src="photo.jpg" alt="Photo" class="img-fluid">
             </div>
             <div class="col-1"></div>
             <div class="col-6">
-                <div class="about-content">
+                <div class="about-content d-flex flex-column h-100">
                     <h2 class="header text-light">About</h2>
-                    <div class="my-3">
+                    <div class="my-2">
                         <h3 class="header-subtitle text-light"></h3>
                     </div>
                     <p class="text-justify text-light" style="font-size: 16px;">
                         I'm Htoo Tint Wai, a versatile professional with expertise as a web developer and network
-                        engineer, delivering cutting-edge programming, design, and seamless functionality to create
-                        exceptional digital experiences.
+                        engineer, delivering
+                        cutting-edge programming, design, and seamless functionality to create exceptional digital
+                        experiences.
                     </p>
                     <p class="text-justify text-light" style="font-size: 16px;">
                         As a web developer, I specialize in crafting sleek and captivating website portfolios using
-                        HTML, CSS, and JavaScript. With my expertise in these core technologies, I bring your ideas to
-                        life with elegance and functionality.
+                        HTML, CSS, and
+                        JavaScript. With my expertise in these core technologies, I bring your ideas to life with
+                        elegance and
+                        functionality.
                     </p>
                     <p class="text-justify text-light" style="font-size: 16px;">
                         As a network engineer, I specialize in building and optimizing robust and secure network
-                        infrastructures. With a keen eye for detail and a passion for cutting-edge technology, I design
-                        networks that ensure seamless connectivity and efficient data flow.
+                        infrastructures. With
+                        a keen eye for detail and a passion for cutting-edge technology, I design networks that ensure
+                        seamless
+                        connectivity and efficient data flow.
                     </p>
-                    <div class="">
-                        <button class="dig-button mt-3">More</button>
+                    <div class="mt-3">
+                        <a href="about.html" class="dig-button text-decoration-none">More</a>
                     </div>
                 </div>
             </div>
@@ -121,13 +127,122 @@
     </div>
 
     <!-- PROJECTS -->
-    <div class="container py-3 my-3 pt-5 mt-5" id="projects">
-        <h2 class="header text-light text-center">Projects</h2>
-        <h3 class="text-light text-center">Dig My Universe</h3>
-        <div class="d-flex justify-content-center mt-4">
-            <a href="path/to/your/resume.pdf" download class="dig-button text-decoration-none text-center">
-                <i class="fas fa-download"></i> Resume
-            </a>
+    <div class="container py-3 my-3 pt-5 mt-3" id="projects">
+        <div class="mb-3">
+            <h2 class="header text-light text-center">Projects</h2>
+            <h3 class="text-light text-center">Dig My Universe</h3>
+        </div>
+        <div id="cardCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row justify-content-center">
+                        <div class="col-md-6">
+                            <div class="card custom-card">
+                                <img src="w1.jpg" alt="LOCKEY Logo" class="card-img w-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">JUNE 2022</h5>
+                                    <h2 class="card-subtitle">LOCKEY</h2>
+                                    <p class="card-text">Website, Web-app, Open-source</p>
+                                    <p class="card-description">LOCKEY is the ultimate tool for both encryption and
+                                        decryption ― brought to you from the pas</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        <div class="col-md-6">
+                            <div class="card custom-card">
+                                <img src="w2.jpg" alt="LOCKEY Logo" class="card-img w-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">JUNE 2022</h5>
+                                    <h2 class="card-subtitle">LOCKEY</h2>
+                                    <p class="card-text">Website, Web-app, Open-source</p>
+                                    <p class="card-description">LOCKEY is the ultimate tool for both encryption and
+                                        decryption ― brought to you from the pas</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#cardCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#cardCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- SERVICES -->
+    <div class="container py-3 my-3 pt-5 mt-3" id="services">
+        <div class="mb-5">
+            <h2 class="header text-light text-center">Services</h2>
+        </div>
+        <div class="row mb-5">
+            <div class="col-4">
+                <div class="card mb-3 mt-3">
+                    <i class="fas fa-paint-brush fa-lg"></i>
+                    <div class="card-content">
+                        <h3 class="my-3">Web Design</h3>
+                        <p>Plan, create and code internet sites and web pages with modern and artful designs.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card mb-3 mt-3">
+                    <i class="fas fa-laptop fa-lg"></i>
+                    <div class="card-content">
+                        <h3 class="my-3">Responsive Design</h3>
+                        <p>Make web pages render well on a variety of devices and windows to ensure usability and
+                            satisfaction.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card mb-3 mt-3">
+                    <i class="fab fa-react fa-lg"></i>
+                    <div class="card-content">
+                        <h3 class="my-3">Web Development</h3>
+                        <p>Develop the graphical user interface of a website using the JavaScript library React.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <div class="card mb-3 mt-3">
+                    <i class="fas fa-code fa-lg"></i>
+                    <div class="card-content">
+                        <h3 class="my-3">Clean Code</h3>
+                        <p>Write code that is readable, maintainable, testable, and extensible so that other developers
+                            can understand it.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card mb-3 mt-3">
+                    <i class="fas fa-tools fa-lg"></i>
+                    <div class="card-content">
+                        <h3 class="my-3">Maintenance & Support</h3>
+                        <p>As a web developer, I provide comprehensive maintenance and support services to ensure the
+                            smooth functioning of your website or web application.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card mb-3 mt-3">
+                    <i class="fas fa-clock fa-lg"></i>
+                    <div class="card-content">
+                        <h3 class="my-3">Time Management</h3>
+                        <p>Manage tasks to finish them in time.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -154,10 +269,10 @@
                     </div>
                     <div class="social-icons mt-4 justify-content-start">
                         <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                        <a href="https://github.com/htootintwai" class="social-icon"><i class="fab fa-github"></i></a>
                         <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
                     </div>
-                    <p class="text-light mt-3" style="font-size: 16px;">Let's start a project together</p>
+
                 </div>
             </div>
             <div class="col-6">
@@ -169,7 +284,7 @@
                                 <input type="text" class="form-control" id="name" name="name" required>
                             </div>
                         </div>
-                        <div class="mb-3">
+                        <div class="mb-3" style="position: relative; z-index: 99;">
                             <label for="email" class="form-label text-light">Email</label>
                             <div class="input-group">
                                 <input type="email" class="form-control" id="email" name="email" required>
@@ -191,15 +306,33 @@
         </div>
     </div>
 
-    <!-- FOOTER NAV -->
-
-
+    <!-- SOURCE CODE -->
+    <div class="container py-3 my-3 pt-3 mt-5" id="source">
+        <div id="source" class="">
+            <div class="text-center">
+                <h2 class="header text-light">Source Code</h2>
+            </div>
+            <div class="text-light text-center">
+                <h3 class="my-3">Behind the simulation</h3>
+                <p class="my-5">
+                    Let's share our source code and grow together. Collaborate, learn, and create amazing things.<br>
+                    Together, we'll push boundaries and achieve coding excellence.<br> Join me on this exciting coding
+                    journey. Together, we'll reach new heights.
+                </p>
+                <div class="d-flex justify-content-center mt-4">
+                    <a href="https://github.com/htootintwai/htootintwai.github.io"
+                        class="dig-button btn btn-light mr-3 me-3">Show me</a>
+                    <a href="resume.pdf" download class="dig-button btn btn-light ms-3">Resume</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- FOOTER -->
     <div class="container py-3 my-3 pt-3 mt-5" id="footer">
         <footer>
             <div class="footer-left text-light">
-                © 2023 Htoo Tint Wai
+                <span>© 2023 Htoo Tint Wai</span>
             </div>
             <div class="footer-middle">
                 <nav class="footer-nav">
@@ -207,20 +340,23 @@
                         <li><a href="#home" class="text-light">Home</a></li>
                         <li><a href="#about" class="text-light">About</a></li>
                         <li><a href="#projects" class="text-light">Projects</a></li>
+                        <li><a href="#services" class="text-light">Services</a></li>
                     </ul>
                 </nav>
             </div>
             <div class="footer-right">
                 <a href="mailto:htootintwai1757@gmail.com" target="_blank" class="social-icon"><i
                         class="fas fa-envelope"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                <a href="https://github.com/htootintwai" class="social-icon"><i class="fab fa-github"></i></a>
                 <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
             </div>
         </footer>
     </div>
 
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
     <script src="cus.js"></script>
 
 </body>

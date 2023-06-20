@@ -7,11 +7,32 @@ body {
 
 }
 
+/* Loading */
 
-
-/* SLIDE */
-
-
+#loading-screen {
+    background-color: #111527;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    z-index: 102;
+  }
+  
+  #l-name {
+    font-size: 48px;
+    color: #ffffff;
+    opacity: 0;
+  }
+  
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
 /* NAVBAR */
 
 #main-nav {
@@ -21,7 +42,7 @@ body {
     width: 100%;
     background-color: #060918;
     backdrop-filter: blur(10px);
-    z-index: 100;
+    z-index: 101;
     transition: background-color 0.3s ease-in-out;
 }
 
@@ -74,7 +95,6 @@ body {
 .text-dark {
     color: #343a40;
 }
-
 
 /* HOME */
 
@@ -147,21 +167,42 @@ body {
 
 /* PROJECTS */
 
-.project-slider {
-    position: relative;
-    overflow: hidden;
+.carousel-item img {
+    max-width: 100%;
+    height: auto;
 }
 
-.slide {
-    display: none;
+.custom-card {
+    background-color: #111527;
+    color: #ffffff;
 }
 
-.slide.active {
-    display: block;
+/* SERVICES */
+
+.card {
+    background-color: #111527;
+    color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    height: 100%;
 }
 
-/* Contact Me */
+.card-icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
 
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 14px;
+    line-height: 1.5;
+}
 
 /* FOOTER */
 
@@ -169,46 +210,46 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
     padding: 10px;
-  }
-  
-  .footer-middle {
+}
+
+.footer-middle {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-grow: 1;
-  }
-  
-  .footer-middle a {
-    margin: 0 5px;
-  }
-  
-  .footer-right {
-    margin-left: auto;
-  }
+}
 
-  .footer-nav ul {
+.footer-middle a {
+    margin: 0 5px;
+}
+
+.footer-right {
+    margin-left: auto;
+}
+
+.footer-nav ul {
     list-style-type: none;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0;
     padding: 0;
-  }
-  
-  .footer-nav li {
+}
+
+.footer-nav li {
     margin-right: 20px;
-  }
-  
-  .footer-nav a {
+}
+
+.footer-nav a {
     text-decoration: none;
     color: #333;
     font-size: 18px;
     position: relative;
-  }
-  
-  .footer-nav a::after {
+}
+
+.footer-nav a::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -218,14 +259,8 @@ footer {
     left: 0;
     transform: scaleX(0);
     transition: transform 0.3s ease-in-out;
-  }
-  
-  .footer-nav a:hover::after {
+}
+
+.footer-nav a:hover::after {
     transform: scaleX(1);
-  }
-  
-
-
-
-  
-  
+}

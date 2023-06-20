@@ -1,3 +1,15 @@
+//LOADING
+window.addEventListener('DOMContentLoaded', function() {
+  var loadingScreen = document.getElementById('loading-screen');
+  var name = document.getElementById('name');
+
+  name.style.animation = 'fade-in 2s ease-in-out forwards';
+
+  setTimeout(function() {
+    loadingScreen.style.display = 'none';
+  }, 10000);
+});
+
 // NAVBAR
 function changeTextColor(element) {
     element.classList.add('text-dark');
@@ -28,7 +40,6 @@ function changeTextColor(element) {
       offset: '50%' 
     });
   }
-
 
 // HOME
 const headerText = document.getElementById('header-text');
@@ -64,26 +75,22 @@ function typeWriter() {
 
 typeWriter();
 
-// PROJECTS
+//Project
+var cardCarousel = new bootstrap.Carousel(document.getElementById('cardCarousel'), {
+  interval: 2000,
+  wrap: true 
+});
 
-const projectSlider = document.querySelector('.project-slider');
-const slides = projectSlider.getElementsByClassName('col-4');
+//SERVICES
+const cards = document.querySelectorAll('.card');
 
-
-const projectsPerSlide = 3;
-
-
-for (let i = 0; i < slides.length; i += projectsPerSlide) {
-  const slideGroup = Array.from(slides).slice(i, i + projectsPerSlide);
-  slideGroup.forEach((slide) => slide.classList.add('active'));
-}
-
-// SLIDE SHOW
-
-  
+cards.forEach((card) => {
+  card.addEventListener('click', () => {
+    card.classList.toggle('active');
+  });
+});
 
 // Contact Me
-
 document.getElementById('contact-form').addEventListener('submit', function (e) {
     e.preventDefault();
     var name = document.getElementById('name').value;
@@ -97,16 +104,7 @@ document.getElementById('contact-form').addEventListener('submit', function (e) 
   });
 
 
-//   Loading
 
-window.addEventListener('load', function() {
-    var loadingScreen = document.getElementById('loading-screen');
-    loadingScreen.style.display = 'none';
-    document.body.style.overflow = 'auto';
-});
-
-
-// FOOTER
 
 
   
