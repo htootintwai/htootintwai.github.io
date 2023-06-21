@@ -1,39 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <!-- Include necessary CSS stylesheets and JavaScript dependencies -->
-    <title>About Me</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  .loading-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #060918;
+}
+
+.code {
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.changing-text {
+  font-size: 0.6em;
+  line-height: 0.9em;
+  margin-left: 0.15em;
+  margin-right: 0.15em;
+  margin-top: 0.15em;
+  padding-left: 0.125em;
+  padding-right: 0.125em;
+  will-change: width;
+  font-family: "Panton Extrabold", sans-serif;
+}
+
+.web-page {
+  display: none;
+}
+
+
+    </style>
 </head>
-
 <body>
-    <div class="container py-3 my-3 pt-5 mt-3" id="about">
-        <!-- Content for the about page -->
-        <div class="row">
-            <!-- Your photo column -->
-            <div class="col-5">
-                <img src="photo.jpg" alt="Photo" class="img-fluid">
-            </div>
-            <!-- Spacer column -->
-            <div class="col-1"></div>
-            <!-- About content column -->
-            <div class="col-6">
-                <div class="about-content">
-                    <h2 class="header text-light">About</h2>
-                    <div class="my-3">
-                        <h3 class="header-subtitle text-light"></h3>
-                    </div>
-                    <!-- Additional paragraphs for education and skills -->
-                    <p class="text-justify text-light" style="font-size: 16px;">
-                        Additional details about your education.
-                    </p>
-                    <p class="text-justify text-light" style="font-size: 16px;">
-                        Additional details about your skills.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</body>
 
+    <div class="loading-page">
+        <div class="code">
+          <span class="changing-text"></span>
+        </div>
+      </div>
+      
+      <div class="web-page">
+        <!-- Your web page content here -->
+      </div>
+      
+      
+    
+    <script>
+      const editable = document.querySelector('.changing-text');
+const words = [
+  'Verifying your coverages...',
+  'Performing final pre-bind checks...',
+  'Generating your unique policy details...',
+  'Preparing your final policy documents...',
+  'Storing policy documents in your ‘My Policies’ page...',
+];
+const animationTimeInms = 50;
+const delayInms = 1000;
+
+function close(index) {
+  editable.textContent = words[index % words.length];
+  const interval = setInterval(function() {
+    const text = editable.textContent;
+    if (!text) {
+      clearInterval(interval);
+      setTimeout(function() {
+        open(++index);
+      }, 100);
+    }
+    editable.textContent = text.slice(0, -1);
+  }, animationTimeInms);
+}
+
+function open(index) {
+  const initialText = words[index % words.length];
+  let i = 1;
+  editable.textContent = '';
+  const interval = setInterval(function() {
+    const text = editable.textContent;
+    if (text.length === initialText.length) {
+      clearInterval(interval);
+      setTimeout(function() {
+        close(index);
+      }, delayInms);
+    }
+    editable.textContent = initialText.slice(0, i++);
+  }, animationTimeInms);
+}
+
+function showWebPage() {
+  const loadingPage = document.querySelector('.loading-page');
+  const webPage = document.querySelector('.web-page');
+
+  setTimeout(function() {
+    loadingPage.style.display = 'none';
+    webPage.style.display = 'block';
+  }, delayInms);
+}
+
+open(0);
+showWebPage();
+
+    </script>
+</body>
 </html>

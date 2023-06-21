@@ -9,29 +9,7 @@ body {
 
 /* Loading */
 
-#loading-screen {
-    background-color: #111527;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    z-index: 102;
-  }
-  
-  #l-name {
-    font-size: 48px;
-    color: #ffffff;
-    opacity: 0;
-  }
-  
-  @keyframes fade-in {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
+
   
 /* NAVBAR */
 
@@ -142,6 +120,7 @@ body {
 }
 
 /* ABOUT */
+
 .about-content {
     padding: 20px;
 }
@@ -165,6 +144,29 @@ body {
     color: #000;
 }
 
+.animation-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    overflow: hidden;
+    position: relative;
+}
+
+.text-animation {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, transform 5s ease-in-out;
+    position: absolute;
+    left: 0;
+    top: 0;
+    white-space: nowrap;
+}
+
+.fade-in {
+    opacity: 1;
+    transform: translateX(0%);
+}
+
 /* PROJECTS */
 
 .carousel-item img {
@@ -175,6 +177,20 @@ body {
 .custom-card {
     background-color: #111527;
     color: #ffffff;
+}
+
+.card-buttons a.btn {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    transition: all 0.3s ease;
+    padding: 10px 20px;
+    margin-right: 10px;
+}
+
+.card-buttons a.btn:hover {
+    background-color: #fff;
+    color: #000;
 }
 
 /* SERVICES */
@@ -202,6 +218,12 @@ body {
 .card-text {
     font-size: 14px;
     line-height: 1.5;
+}
+
+/* CONTACT */
+
+.contact-content .contact-info:hover {
+    color: #dd1818 !important;
 }
 
 /* FOOTER */
@@ -263,4 +285,8 @@ footer {
 
 .footer-nav a:hover::after {
     transform: scaleX(1);
+}
+
+.white-line-separator {
+    border-top: 1px solid white;
 }

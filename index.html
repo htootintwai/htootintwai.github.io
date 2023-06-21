@@ -20,344 +20,396 @@
 
     <!-- Slide Show For Projects -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
-    <link rel="stylesheet" href="cus.css">
+    <link rel="stylesheet" href="Portfolio Assets/CSS/cus.css">
 
 </head>
 
 <body id="body" class="about-page">
 
-    <!-- Loading -->
-    <div id="loading-screen">
-        <h1 id="l-name">Htoo Tint Wai</h1>
-    </div>
 
-    <!-- NAVBAR -->
-    <nav class="nav-container py-3 mb-3 d-block" id="main-nav">
-        <div class="container">
-            <div class="d-flex justify-content-between align-items-center ms-5">
-                <div class="nav-section">
-                    <span class="link-container">
-                        <a href="#about" class="text-decoration-none text-light nav-h"
-                            onmouseover="changeTextColor(this)" onmouseout="resetTextColor(this)">About</a>
-                    </span>
-                    <span class="link-container">
-                        <a href="#projects" class="text-decoration-none text-light nav-h"
-                            onmouseover="changeTextColor(this)" onmouseout="resetTextColor(this)">Projects</a>
-                    </span>
-                </div>
-                <div class="nav-section me-5">
-                    <a href="#home" class="text-decoration-none text-light me-3">Htoo Tint Wai</a>
-                </div>
 
-                <div class="me-5">
-                    <a href="#contact" class="text-decoration-none text-light nav-h" onmouseover="changeTextColor(this)"
-                        onmouseout="resetTextColor(this)">Contact Me</a>
+    <div id="content" class="hidden">
+
+        <!-- NAVBAR -->
+        <nav class="nav-container py-3 mb-3 d-block" id="main-nav">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center ms-5">
+                    <div class="nav-section">
+                        <span class="link-container">
+                            <a href="#about" class="text-decoration-none text-light nav-h"
+                                onmouseover="changeTextColor(this)" onmouseout="resetTextColor(this)">About</a>
+                        </span>
+                        <span class="link-container">
+                            <a href="#projects" class="text-decoration-none text-light nav-h"
+                                onmouseover="changeTextColor(this)" onmouseout="resetTextColor(this)">Projects</a>
+                        </span>
+                    </div>
+                    <div class="nav-section me-5">
+                        <a href="#home" class="text-decoration-none text-light me-3">Htoo Tint Wai</a>
+                    </div>
+
+                    <div class="me-5">
+                        <a href="#contact" class="text-decoration-none text-light nav-h"
+                            onmouseover="changeTextColor(this)" onmouseout="resetTextColor(this)">Contact Me</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
+        </nav>
 
-    <!-- HOME -->
-    <div class="container py-3 my-5 pt-3" id="home" style="width: 1366px; height: 758px;">
-        <div class="">
-            <div class="d-flex justify-content-center align-items-center">
-                <span class="text-center text-middle text-light" style="font-size: 120px;">I'm A Web Developer & Network
-                    Engineer</span>
-            </div>
-            <div class="d-flex justify-content-center align-items-center mt-5 mb-5">
-                <a href="#projects"><button class="dig-button">Dig My Universe</button></a>
-            </div>
-            <div class="mb-5">
-                <div class="social-icons">
-                    <a href="https://www.instagram.com/htoo_tint_wai/" target="_blank" class="social-icon"><i
-                            class="fab fa-instagram"></i></a>
-                    <a href="https://github.com/htootintwai" target="_blank" class="social-icon"><i
-                            class="fab fa-github"></i></a>
-                    <a href="mailto:htootintwai1757@gmail.com" target="_blank" class="social-icon"><i
-                            class="fas fa-envelope"></i></a>
-                    <a href="https://www.linkedin.com/in/htoo-tint-wai-911433190" target="_blank" class="social-icon"><i
-                            class="fab fa-linkedin-in"></i></a>
+        <!-- HOME -->
+        <div class="container py-3 my-5 pt-3" id="home" style="width: 1366px; height: 758px;">
+            <div class="">
+                <div class="d-flex justify-content-center align-items-center">
+                    <span class="text-center text-middle text-light" style="font-size: 120px;">I'm A Web Developer &
+                        Network
+                        Engineer</span>
                 </div>
-
+                <div class="d-flex justify-content-center align-items-center mt-5 mb-5">
+                    <a href="#projects"><button class="dig-button">Dig My Universe</button></a>
+                </div>
+                <div class="mb-5">
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/htoo_tint_wai/" target="_blank" class="social-icon"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://github.com/htootintwai" target="_blank" class="social-icon"><i
+                                class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/htoo-tint-wai-911433190" target="_blank"
+                            class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="mailto:htootintwai1757@gmail.com" target="_blank" class="social-icon"><i
+                                class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
             </div>
             <h2 class="text-center text-light mt-3">Let's work together</h2>
         </div>
-    </div>
 
-    <!-- ABOUT -->
-    <div class="container py-3 my-3 pt-5 mt-3" id="about">
-        <div class="row align-items-center">
-            <div class="col-5">
-                <img src="photo.jpg" alt="Photo" class="img-fluid">
-            </div>
-            <div class="col-1"></div>
-            <div class="col-6">
-                <div class="about-content d-flex flex-column h-100">
-                    <h2 class="header text-light">About</h2>
-                    <div class="my-2">
-                        <h3 class="header-subtitle text-light"></h3>
-                    </div>
-                    <p class="text-justify text-light" style="font-size: 16px;">
-                        I'm Htoo Tint Wai, a versatile professional with expertise as a web developer and network
-                        engineer, delivering
-                        cutting-edge programming, design, and seamless functionality to create exceptional digital
-                        experiences.
-                    </p>
-                    <p class="text-justify text-light" style="font-size: 16px;">
-                        As a web developer, I specialize in crafting sleek and captivating website portfolios using
-                        HTML, CSS, and
-                        JavaScript. With my expertise in these core technologies, I bring your ideas to life with
-                        elegance and
-                        functionality.
-                    </p>
-                    <p class="text-justify text-light" style="font-size: 16px;">
-                        As a network engineer, I specialize in building and optimizing robust and secure network
-                        infrastructures. With
-                        a keen eye for detail and a passion for cutting-edge technology, I design networks that ensure
-                        seamless
-                        connectivity and efficient data flow.
-                    </p>
-                    <div class="mt-3">
-                        <a href="about.html" class="dig-button text-decoration-none">More</a>
+        <!-- ABOUT -->
+        <div class="container py-3 my-3 pt-5 mt-3" id="about">
+            <div class="row align-items-center">
+                <div class="col-5">
+                    <img src="Portfolio Assets/ITEMS/Image/photo.jpg" alt="Photo" class="img-fluid">
+                </div>
+                <div class="col-1"></div>
+                <div class="col-6">
+                    <div class="about-content d-flex flex-column h-100">
+                        <h2 class="header text-light">About</h2>
+                        <div class="my-2">
+                            <div class="animation-container">
+                                <h4 class="text-animation text-light" id="text">Web Developer</h4>
+                            </div>
+                        </div>
+                        <p class="text-justify text-light" style="font-size: 16px;">
+                            I'm Htoo Tint Wai, a versatile professional with expertise as a web developer and network
+                            engineer, delivering
+                            cutting-edge programming, design, and seamless functionality to create exceptional digital
+                            experiences.
+                        </p>
+                        <p class="text-justify text-light" style="font-size: 16px;">
+                            As a web developer, I specialize in crafting sleek and captivating website portfolios using
+                            HTML, CSS, and
+                            JavaScript. With my expertise in these core technologies, I bring your ideas to life with
+                            elegance and
+                            functionality.
+                        </p>
+                        <p class="text-justify text-light" style="font-size: 16px;">
+                            As a network engineer, I specialize in building and optimizing robust and secure network
+                            infrastructures. With
+                            a keen eye for detail and a passion for cutting-edge technology, I design networks that
+                            ensure
+                            seamless
+                            connectivity and efficient data flow.
+                        </p>
+                        <div class="mt-3">
+                            <a href="about.html" class="dig-button text-decoration-none">More</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- PROJECTS -->
-    <div class="container py-3 my-3 pt-5 mt-3" id="projects">
-        <div class="mb-3">
-            <h2 class="header text-light text-center">Projects</h2>
-            <h3 class="text-light text-center">Dig My Universe</h3>
-        </div>
-        <div id="cardCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="row justify-content-center">
-                        <div class="col-md-6">
-                            <div class="card custom-card">
-                                <img src="w1.jpg" alt="LOCKEY Logo" class="card-img w-100">
-                                <div class="card-body">
-                                    <h5 class="card-title">JUNE 2022</h5>
-                                    <h2 class="card-subtitle">LOCKEY</h2>
-                                    <p class="card-text">Website, Web-app, Open-source</p>
-                                    <p class="card-description">LOCKEY is the ultimate tool for both encryption and
-                                        decryption ― brought to you from the pas</p>
+        <!-- PROJECTS -->
+        <div class="container py-3 my-3 pt-5 mt-3" id="projects">
+            <div class="mb-3">
+                <h2 class="header text-light text-center">Projects</h2>
+                <h3 class="text-light text-center">Dig My Universe</h3>
+            </div>
+            <div id="cardCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center">
+                            <div class="col-md-6">
+                                <div class="card custom-card">
+                                    <img src="Portfolio Assets/ITEMS/Image/Project Website/Instagram Redesign.png"
+                                        alt="Instagram Redesign<" class="card-img w-100">
+                                    <div class="card-body">
+                                        <h5 class="card-title">MARCH 2023</h5>
+                                        <h2 class="card-subtitle my-3">Instagram Redesign</h2>
+                                        <p class="card-text">HTML & CSS</p>
+                                        <div class="card-buttons mt-3">
+                                            <a href="https://github.com/htootintwai/Instagram-Redesign-Project"
+                                                class="btn btn-primary">Source Code</a>
+                                            <a href="https://instagram-redesign-project.netlify.app/"
+                                                class="btn btn-primary">Live Demo</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-md-6">
+                                <div class="card custom-card">
+                                    <img src="Portfolio Assets/ITEMS/Image/Project Website/Sunspot.png" alt="Sunspot"
+                                        class="card-img w-100">
+                                    <div class="card-body">
+                                        <h5 class="card-title">MAY 2023</h5>
+                                        <h2 class="card-subtitle my-3">Sunspot</h2>
+                                        <p class="card-text">HTML, CSS, Bootstrap & JavaScript</p>
+                                        <div class="card-buttons mt-3">
+                                            <a href="https://github.com/htootintwai/Sunspot-B5-Project"
+                                                class="btn btn-primary">Source Code</a>
+                                            <a href="https://sunspot-b5-project.netlify.app/"
+                                                class="btn btn-primary">Live
+                                                Demo</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-md-6">
+                                <div class="card custom-card">
+                                    <img src="Portfolio Assets/ITEMS/Image/Project Website/Squarespot Admin Dashboard.png"
+                                        alt="SquareSpot" class="card-img w-100">
+                                    <div class="card-body">
+                                        <h5 class="card-title">JUNE 2023</h5>
+                                        <h2 class="card-subtitle my-3">SquareSpot</h2>
+                                        <p class="card-text">HTML, CSS, Bootstrap & JavaScript</p>
+                                        <div class="card-buttons mt-3">
+                                            <a href="https://github.com/htootintwai/SquareSpot-Admin-Dashboard"
+                                                class="btn btn-primary">Source Code</a>
+                                            <a href="https://squarespot-admin-dashboard.netlify.app/"
+                                                class="btn btn-primary">Live Demo</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <div class="row justify-content-center">
-                        <div class="col-md-6">
-                            <div class="card custom-card">
-                                <img src="w2.jpg" alt="LOCKEY Logo" class="card-img w-100">
-                                <div class="card-body">
-                                    <h5 class="card-title">JUNE 2022</h5>
-                                    <h2 class="card-subtitle">LOCKEY</h2>
-                                    <p class="card-text">Website, Web-app, Open-source</p>
-                                    <p class="card-description">LOCKEY is the ultimate tool for both encryption and
-                                        decryption ― brought to you from the pas</p>
+                <button class="carousel-control-prev" type="button" data-bs-target="#cardCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#cardCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- SERVICES -->
+        <div class="container py-3 my-3 pt-5 mt-3" id="services">
+            <div class="mb-5">
+                <h2 class="header text-light text-center">Services</h2>
+            </div>
+            <div class="row mb-5">
+                <div class="col-4">
+                    <div class="card mb-3 mt-3">
+                        <i class="fas fa-paint-brush fa-lg"></i>
+                        <div class="card-content">
+                            <h3 class="my-3">Web Design</h3>
+                            <p>Plan, create and code internet sites and web pages with modern and artful designs.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card mb-3 mt-3">
+                        <i class="fas fa-laptop fa-lg"></i>
+                        <div class="card-content">
+                            <h3 class="my-3">Responsive Design</h3>
+                            <p>Make web pages render well on a variety of devices and windows to ensure usability and
+                                satisfaction.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card mb-3 mt-3">
+                        <i class="fab fa-react fa-lg"></i>
+                        <div class="card-content">
+                            <h3 class="my-3">Web Development</h3>
+                            <p>Develop the graphical user interface of a website using the JavaScript library React.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <div class="card mb-3 mt-3">
+                        <i class="fas fa-code fa-lg"></i>
+                        <div class="card-content">
+                            <h3 class="my-3">Clean Code</h3>
+                            <p>Write code that is readable, maintainable, testable, and extensible so that other
+                                developers
+                                can understand it.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card mb-3 mt-3">
+                        <i class="fas fa-tools fa-lg"></i>
+                        <div class="card-content">
+                            <h3 class="my-3">Maintenance & Support</h3>
+                            <p>Provide comprehensive maintenance and support services to ensure the
+                                smooth functioning of your website or web application.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card mb-3 mt-3">
+                        <i class="fas fa-clock fa-lg"></i>
+                        <div class="card-content">
+                            <h3 class="my-3">Time Management</h3>
+                            <p>Manage tasks to finish them in time.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Me -->
+        <div class="container py-3 my-3 pt-3 mt-5" id="contact">
+            <div class="row">
+                <div class="col-6">
+                    <div class="contact-content">
+                        <h2 class="header text-light">Contact</h2>
+                        <h3 class="subheader text-light my-3">Got a problem to solve?</h3>
+                        <p class="text-justify text-light">Get your space suit ready and tell me your ideas to develop
+                            your
+                            dream application.</p>
+                        <div class="d-flex align-items-center mt-4">
+                            <i class="fas fa-envelope text-light me-2"></i>
+                            <span class="text-light contact-info">htootintwai1757@gmail.com</span>
+                        </div>
+                        <div class="d-flex align-items-center mt-2">
+                            <i class="fas fa-phone-alt text-light me-2"></i>
+                            <span class="text-light contact-info">+95 9881657311</span>
+                        </div>
+                        <div class="d-flex align-items-center mt-2">
+                            <i class="fas fa-map-marker-alt text-light me-2"></i>
+                            <span class="text-light ms-1 contact-info">Yangon, Myanmar</span>
+                        </div>
+                        <div class="social-icons mt-4 justify-content-start">
+                            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                            <a href="https://github.com/htootintwai" class="social-icon"><i
+                                    class="fab fa-github"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="contact-form">
+                        <form id="contact-form">
+                            <div class="mb-3">
+                                <label for="name" class="form-label text-light">Name</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" id="name" name="name" required>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#cardCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#cardCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </div>
-
-    <!-- SERVICES -->
-    <div class="container py-3 my-3 pt-5 mt-3" id="services">
-        <div class="mb-5">
-            <h2 class="header text-light text-center">Services</h2>
-        </div>
-        <div class="row mb-5">
-            <div class="col-4">
-                <div class="card mb-3 mt-3">
-                    <i class="fas fa-paint-brush fa-lg"></i>
-                    <div class="card-content">
-                        <h3 class="my-3">Web Design</h3>
-                        <p>Plan, create and code internet sites and web pages with modern and artful designs.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="card mb-3 mt-3">
-                    <i class="fas fa-laptop fa-lg"></i>
-                    <div class="card-content">
-                        <h3 class="my-3">Responsive Design</h3>
-                        <p>Make web pages render well on a variety of devices and windows to ensure usability and
-                            satisfaction.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="card mb-3 mt-3">
-                    <i class="fab fa-react fa-lg"></i>
-                    <div class="card-content">
-                        <h3 class="my-3">Web Development</h3>
-                        <p>Develop the graphical user interface of a website using the JavaScript library React.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-4">
-                <div class="card mb-3 mt-3">
-                    <i class="fas fa-code fa-lg"></i>
-                    <div class="card-content">
-                        <h3 class="my-3">Clean Code</h3>
-                        <p>Write code that is readable, maintainable, testable, and extensible so that other developers
-                            can understand it.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="card mb-3 mt-3">
-                    <i class="fas fa-tools fa-lg"></i>
-                    <div class="card-content">
-                        <h3 class="my-3">Maintenance & Support</h3>
-                        <p>As a web developer, I provide comprehensive maintenance and support services to ensure the
-                            smooth functioning of your website or web application.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="card mb-3 mt-3">
-                    <i class="fas fa-clock fa-lg"></i>
-                    <div class="card-content">
-                        <h3 class="my-3">Time Management</h3>
-                        <p>Manage tasks to finish them in time.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Contact Me -->
-    <div class="container py-3 my-3 pt-3 mt-5" id="contact">
-        <div class="row">
-            <div class="col-6">
-                <div class="contact-content">
-                    <h2 class="header text-light">Contact</h2>
-                    <h3 class="subheader text-light my-3">Got a problem to solve?</h3>
-                    <p class="text-justify text-light">Get your space suit ready and tell me your ideas to develop your
-                        dream application.</p>
-                    <div class="d-flex align-items-center mt-4">
-                        <i class="fas fa-envelope text-light me-2"></i>
-                        <span class="text-light">htootintwai1757@gmail.com</span>
-                    </div>
-                    <div class="d-flex align-items-center mt-2">
-                        <i class="fas fa-phone-alt text-light me-2"></i>
-                        <span class="text-light">+95 9881657311</span>
-                    </div>
-                    <div class="d-flex align-items-center mt-2">
-                        <i class="fas fa-map-marker-alt text-light me-2"></i>
-                        <span class="text-light ms-1">Yangon, Myanmar</span>
-                    </div>
-                    <div class="social-icons mt-4 justify-content-start">
-                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                        <a href="https://github.com/htootintwai" class="social-icon"><i class="fab fa-github"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
-                    </div>
-
-                </div>
-            </div>
-            <div class="col-6">
-                <div class="contact-form">
-                    <form id="contact-form">
-                        <div class="mb-3">
-                            <label for="name" class="form-label text-light">Name</label>
-                            <div class="input-group">
-                                <input type="text" class="form-control" id="name" name="name" required>
+                            <div class="mb-3" style="position: relative; z-index: 99;">
+                                <label for="email" class="form-label text-light">Email</label>
+                                <div class="input-group">
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                </div>
                             </div>
-                        </div>
-                        <div class="mb-3" style="position: relative; z-index: 99;">
-                            <label for="email" class="form-label text-light">Email</label>
-                            <div class="input-group">
-                                <input type="email" class="form-control" id="email" name="email" required>
+                            <div class="mb-3">
+                                <label for="message" class="form-label text-light">Message</label>
+                                <div class="input-group">
+                                    <textarea class="form-control" id="message" name="message" rows="5"
+                                        required></textarea>
+                                </div>
                             </div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="message" class="form-label text-light">Message</label>
-                            <div class="input-group">
-                                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
-                            </div>
-                        </div>
-                        <button type="submit" class="dig-button text-decoration-none w-100" id="submit-btn">
-                            Contact Me <i class="fas fa-rocket"></i>
-                        </button>
-                    </form>
-                    <div id="success-message" class="mt-3 text-light"></div>
+                            <button type="submit" class="dig-button text-decoration-none w-100" id="submit-btn">
+                                Contact Me <i class="fas fa-rocket"></i>
+                            </button>
+                        </form>
+                        <div id="success-message" class="mt-3 text-light"></div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- SOURCE CODE -->
-    <div class="container py-3 my-3 pt-3 mt-5" id="source">
-        <div id="source" class="">
-            <div class="text-center">
-                <h2 class="header text-light">Source Code</h2>
-            </div>
-            <div class="text-light text-center">
-                <h3 class="my-3">Behind the simulation</h3>
-                <p class="my-5">
-                    Let's share our source code and grow together. Collaborate, learn, and create amazing things.<br>
-                    Together, we'll push boundaries and achieve coding excellence.<br> Join me on this exciting coding
-                    journey. Together, we'll reach new heights.
-                </p>
-                <div class="d-flex justify-content-center mt-4">
-                    <a href="https://github.com/htootintwai/htootintwai.github.io"
-                        class="dig-button btn btn-light mr-3 me-3">Show me</a>
-                    <a href="resume.pdf" download class="dig-button btn btn-light ms-3">Resume</a>
+        <!-- SOURCE CODE -->
+        <div class="container py-3 my-3 pt-3 mt-5" id="source">
+            <div id="source" class="">
+                <div class="text-center">
+                    <h2 class="header text-light">Source Code</h2>
+                </div>
+                <div class="text-light text-center">
+                    <h3 class="my-3">Behind the simulation</h3>
+                    <p class="my-5">
+                        Let's share our source code and grow together. Collaborate, learn, and create amazing
+                        things.<br>
+                        Together, we'll push boundaries and achieve coding excellence.<br> Join me on this exciting
+                        coding
+                        journey. Together, we'll reach new heights.
+                    </p>
+                    <div class="d-flex justify-content-center mt-4">
+                        <a href="https://github.com/htootintwai/htootintwai.github.io"
+                            class="dig-button btn btn-light mr-3 me-3">Show me</a>
+                        <a href="Portfolio Assets/ITEMS/Resume/resume.pdf" download
+                            class="dig-button btn btn-light ms-3">Resume</a>
+                    </div>
                 </div>
             </div>
         </div>
+
+        <!-- FOOTER NAV -->
+        <div class="container py-3">
+            <div class="">
+                <div class="footer-middle">
+                    <nav class="footer-nav">
+                        <ul>
+                            <li><a href="#home" class="text-light">Home</a></li>
+                            <li><a href="#about" class="text-light">About</a></li>
+                            <li><a href="#projects" class="text-light">Projects</a></li>
+                            <li><a href="#services" class="text-light">Services</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="container pb-3 mb-3" id="footer">
+            <hr class="white-line-separator">
+            <footer>
+                <div class="footer-left text-light">
+                    <span>© 2023 Htoo Tint Wai. All Rights Reserved.</span>
+                </div>
+                <div class="footer-right">
+                    <a href="mailto:htootintwai1757@gmail.com" target="_blank" class="social-icon"><i
+                            class="fas fa-envelope"></i></a>
+                    <a href="https://www.instagram.com/htoo_tint_wai/" target="_blank" class="social-icon"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/htootintwai" class="social-icon"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/htoo-tint-wai-911433190" target="_blank" class="social-icon"><i
+                            class="fab fa-linkedin"></i></a>
+                </div>
+            </footer>
+        </div>
+
     </div>
 
-    <!-- FOOTER -->
-    <div class="container py-3 my-3 pt-3 mt-5" id="footer">
-        <footer>
-            <div class="footer-left text-light">
-                <span>© 2023 Htoo Tint Wai</span>
-            </div>
-            <div class="footer-middle">
-                <nav class="footer-nav">
-                    <ul>
-                        <li><a href="#home" class="text-light">Home</a></li>
-                        <li><a href="#about" class="text-light">About</a></li>
-                        <li><a href="#projects" class="text-light">Projects</a></li>
-                        <li><a href="#services" class="text-light">Services</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="footer-right">
-                <a href="mailto:htootintwai1757@gmail.com" target="_blank" class="social-icon"><i
-                        class="fas fa-envelope"></i></a>
-                <a href="https://github.com/htootintwai" class="social-icon"><i class="fab fa-github"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
-            </div>
-        </footer>
-    </div>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
-    <script src="cus.js"></script>
+    <script src="Portfolio Assets/JS/cus.js"></script>
 
 </body>
 
