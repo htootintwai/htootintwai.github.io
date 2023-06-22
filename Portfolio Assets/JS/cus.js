@@ -1,7 +1,16 @@
 //LOADING
 
+window.addEventListener("load", function() {
+  var loadingContainer = document.getElementById("loading-container");
+
+  setTimeout(function() {
+    loadingContainer.style.display = "none";
+    content.style.display = "block";
+  }, 3000);
+});
 
 // NAVBAR
+
 function changeTextColor(element) {
   element.classList.add('text-dark');
 }
@@ -32,7 +41,11 @@ for (var i = 0; i < sections.length; i++) {
   });
 }
 
+// HOME
+
+
 // ABOUT
+
 const text = document.getElementById('text');
 const texts = ['Web Developer', 'Network Engineer'];
 let index = 0;
@@ -53,14 +66,15 @@ function animateText() {
 
 animateText();
 
-
 //Project
+
 var cardCarousel = new bootstrap.Carousel(document.getElementById('cardCarousel'), {
   interval: 10000,
   wrap: true
 });
 
 //SERVICES
+
 const cards = document.querySelectorAll('.card');
 
 cards.forEach((card) => {
@@ -70,6 +84,7 @@ cards.forEach((card) => {
 });
 
 // Contact Me
+
 document.getElementById('contact-form').addEventListener('submit', function (e) {
   e.preventDefault();
   var name = document.getElementById('name').value;
