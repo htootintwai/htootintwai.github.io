@@ -255,21 +255,29 @@ body {
     height: 30px;
     overflow: hidden;
     position: relative;
-}
-
-.text-animation {
+  }
+  
+  .text-animation {
     opacity: 0;
-    transition: opacity 1s ease-in-out, transform 5s ease-in-out;
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
     position: absolute;
     left: 0;
     top: 0;
     white-space: nowrap;
-}
-
-.fade-in {
+  }
+  
+  .slide-out {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  
+  .slide-in {
     opacity: 1;
-    transform: translateX(0%);
-}
+    transform: translateY(0%);
+  }
+  
+  
+  
 
 /* PROJECTS */
 
@@ -399,3 +407,6 @@ footer {
 .white-line-separator {
     border-top: 1px solid white;
 }
+
+
+  

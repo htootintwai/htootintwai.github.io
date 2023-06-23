@@ -51,17 +51,17 @@ const texts = ['Web Developer', 'Network Engineer'];
 let index = 0;
 
 function animateText() {
-  text.classList.add('fade-out');
+  text.classList.add('slide-out');
   setTimeout(() => {
     text.textContent = texts[index];
-    text.classList.remove('fade-out');
-    text.classList.add('fade-in');
+    text.classList.remove('slide-out');
+    text.classList.add('slide-in');
     index = (index + 1) % texts.length;
     setTimeout(() => {
-      text.classList.remove('fade-in');
+      text.classList.remove('slide-in');
       animateText();
-    }, 1000);
-  }, 3000);
+    }, 2000);
+  }, 2000);
 }
 
 animateText();
@@ -96,6 +96,10 @@ document.getElementById('contact-form').addEventListener('submit', function (e) 
   document.getElementById('email').value = '';
   document.getElementById('message').value = '';
 });
+
+
+
+
 
 
 
