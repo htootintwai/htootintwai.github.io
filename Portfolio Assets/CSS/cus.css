@@ -454,9 +454,9 @@ footer {
         .nav-links {
             position: absolute;
             right: 0;
-            top: 8vh;
-            min-height: 92vh;
-            background: #333;
+            top: 7vh;
+            min-height: 93vh;
+            background: #060918;
             display: flex;
             flex-direction: column;
             align-items: center;

@@ -110,14 +110,23 @@ const navSlide = () => {
       if (link.style.animation) {
         link.style.animation = "";
       } else {
-        link.style.animation = `navLinkFade 0.5s ease forwards ${
-          index / 7 + 0.5
-        }s `;
+        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s `;
       }
     });
+
     burger.classList.toggle("toggle");
   });
-  //
+
+  // Close menu when clicking on a link
+  navLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      nav.classList.remove("nav-active");
+      burger.classList.remove("toggle");
+      navLinks.forEach((link) => {
+        link.style.animation = ""; // Reset animation for all links
+      });
+    });
+  });
 };
 
 navSlide();
