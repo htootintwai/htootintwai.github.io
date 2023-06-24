@@ -1,9 +1,9 @@
 //LOADING
 
-window.addEventListener("load", function() {
+window.addEventListener("load", function () {
   var loadingContainer = document.getElementById("loading-container");
 
-  setTimeout(function() {
+  setTimeout(function () {
     loadingContainer.style.display = "none";
     content.style.display = "block";
   }, 3000);
@@ -96,6 +96,54 @@ document.getElementById('contact-form').addEventListener('submit', function (e) 
   document.getElementById('email').value = '';
   document.getElementById('message').value = '';
 });
+
+//Mobile View
+function toggleMobileMenu() {
+  const mobileMenu = document.getElementById('mobileMenu');
+  const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+  mobileMenu.classList.toggle('open');
+  mobileMenuToggle.classList.toggle('open');
+}
+
+window.addEventListener('resize', removeTextJustify);
+
+function removeTextJustify() {
+  var paragraph = document.getElementById('myText');
+
+  if (window.innerWidth <= 767) {
+    paragraph.classList.remove('text-justify');
+  } else {
+    paragraph.classList.add('text-justify');
+  }
+}
+
+removeTextJustify();
+
+function swapFooterElements() {
+  var footer = document.querySelector('#footer');
+  var footerLeft = footer.querySelector('.footer-left');
+  var footerRight = footer.querySelector('.footer-right');
+
+  if (window.innerWidth <= 767) {
+    footer.appendChild(footerRight);
+  } else {
+    footer.insertBefore(footerRight, footerLeft);
+  }
+}
+
+window.addEventListener('resize', swapFooterElements);
+
+// Call the function on page load
+swapFooterElements();
+
+
+
+
+
+
+
+
+
 
 
 

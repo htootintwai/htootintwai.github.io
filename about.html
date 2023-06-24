@@ -4,34 +4,58 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+    .navbar-toggle {
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.navbar-toggle span {
+    display: block;
+    height: 2px;
+    background-color: #000;
+    margin-bottom: 4px;
+}
+
+@media (max-width: 767px) {
+    .nav-mobile {
+        display: none;
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+
+    .show {
+        display: block;
+    }
+}
+
+  </style>
 </head>
 <body>
-  <div class="container py-3 my-3 pt-5 mt-3" id="about">
-    <!-- Content for the about page -->
-    <div class="row">
-        <!-- Your photo column -->
-        <div class="col-5">
-            <img src="photo.jpg" alt="Photo" class="img-fluid">
-        </div>
-        <!-- Spacer column -->
-        <div class="col-1"></div>
-        <!-- About content column -->
-        <div class="col-6">
-            <div class="about-content">
-                <h2 class="header text-light">About</h2>
-                <div class="my-3">
-                    <h3 class="header-subtitle text-light"></h3>
+    <nav class="nav-container py-3 mb-3 d-block" id="main-nav">
+        <div class="container">
+            
+                    <div class="navbar-toggle" onclick="toggleMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
-                <!-- Additional paragraphs for education and skills -->
-                <p class="text-justify text-light" style="font-size: 16px;">
-                    Additional details about your education.
-                </p>
-                <p class="text-justify text-light" style="font-size: 16px;">
-                    Additional details about your skills.
-                </p>
             </div>
         </div>
-    </div>
-</div>
+    </nav>
+    
+
+<script>
+    function toggleMenu() {
+    var navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('show');
+}
+
+
+</script>
 </body>
 </html>

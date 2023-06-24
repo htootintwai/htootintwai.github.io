@@ -42,51 +42,62 @@
         <nav class="nav-container py-3 mb-3 d-block" id="main-nav">
             <div class="container">
                 <div class="d-flex justify-content-between align-items-center ms-5">
-                    <div class="nav-section">
-                        <span class="link-container">
+                    <div class="mobile-dnone">
+                        <span class="mr-10">
                             <a href="#about" class="text-decoration-none text-light nav-h"
                                 onmouseover="changeTextColor(this)" onmouseout="resetTextColor(this)">About</a>
                         </span>
-                        <span class="link-container">
+                        <span class="mr-10">
                             <a href="#projects" class="text-decoration-none text-light nav-h"
                                 onmouseover="changeTextColor(this)" onmouseout="resetTextColor(this)">Projects</a>
                         </span>
                     </div>
-                    <div class="nav-section me-5">
-                        <a href="#home" class="text-decoration-none text-light me-3">Htoo Tint Wai</a>
+
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="me-5 home">
+                            <a href="#home" class="text-decoration-none text-light me-3">Htoo Tint Wai</a>
+                        </div>
+                        <div class="mobile-menu-toggle desktop-dnone" onclick="toggleMobileMenu()">
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                        </div>
+                        <div class="mobile-menu desktop-dnone" id="mobileMenu">
+
+                        </div>
                     </div>
 
-                    <div class="me-5">
+                    <div class="me-5 mobile-dnone">
                         <a href="#contact" class="text-decoration-none text-light nav-h"
                             onmouseover="changeTextColor(this)" onmouseout="resetTextColor(this)">Contact Me</a>
                     </div>
+
                 </div>
             </div>
         </nav>
 
         <!-- HOME -->
-        <div class="container py-3 my-5 pt-3" id="home" style="width: 1366px; height: 768px;">
-            <div class="">
-                <div class="d-flex justify-content-center align-items-center">
-                    <span class="text-center text-middle text-light animated-text" style="font-size: 120px;">I'm A Web
-                        Developer & Network Engineer</span>
-                </div>
-                <div class="d-flex justify-content-center align-items-center mt-5 mb-5">
-                    <a href="#projects"><button class="dig-button">Dig My Universe</button></a>
-                </div>
-                <div class="mb-5">
-                    <div class="social-icons">
-                        <a href="https://www.instagram.com/htoo_tint_wai/" target="_blank" class="social-icon"><i
-                                class="fab fa-instagram"></i></a>
-                        <a href="https://github.com/htootintwai" target="_blank" class="social-icon"><i
-                                class="fab fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/htoo-tint-wai-911433190" target="_blank"
-                            class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="mailto:htootintwai1757@gmail.com" target="_blank" class="social-icon"><i
-                                class="fas fa-envelope"></i></a>
-                    </div>
+        <div class="container py-3 my-5 pt-3 " id="home">
+            <div class="d-flex justify-content-center align-items-center">
+                <span class="text-center text-middle text-light animated-text wd-en-text">I'm A Web
+                    Developer & Network Engineer</span>
+            </div>
+            <div class="d-flex justify-content-center align-items-center mt-5 mb-5">
+                <a href="#projects"><button class="dig-button">Dig My Universe</button></a>
+            </div>
+            <div class="mb-5">
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/htoo_tint_wai/" target="_blank" class="social-icon"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/htootintwai" target="_blank" class="social-icon"><i
+                            class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/htoo-tint-wai-911433190" target="_blank" class="social-icon"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:htootintwai1757@gmail.com" target="_blank" class="social-icon"><i
+                            class="fas fa-envelope"></i></a>
                 </div>
             </div>
+
             <div class="d-flex justify-content-center align-items-center">
                 <a href="https://i.postimg.cc/T27Y8hfQ/binance.jpg">
                     <img class="bmc bg-light" src="Portfolio Assets/ITEMS/Image/buy me a coffee.png"
@@ -98,11 +109,11 @@
         <!-- ABOUT -->
         <div class="container py-3 my-3 pt-5 mt-3" id="about">
             <div class="row align-items-center">
-                <div class="col-5">
+                <div class="col-12 col-md-5">
                     <img src="Portfolio Assets/ITEMS/Image/photo.jpg" alt="Photo" class="img-fluid">
                 </div>
-                <div class="col-1"></div>
-                <div class="col-6">
+                <div class="col-12 col-md-1 mobile-dnone"></div>
+                <div class="col-12 col-md-6 ">
                     <div class="about-content d-flex flex-column h-100">
                         <h2 class="header text-light">About</h2>
                         <div class="my-2">
@@ -131,9 +142,10 @@
                             seamless
                             connectivity and efficient data flow.
                         </p>
-                        <div class="mt-3">
+                        <div class="mt-3 ml-15">
                             <a href="about.html" class="dig-button text-decoration-none">Learn More</a>
-                            <a href="Portfolio Assets/ITEMS/Resume/resume.pdf" class="dig-button text-decoration-none ml-3" download>Download CV</a>
+                            <a href="Portfolio Assets/ITEMS/Resume/" class="dig-button text-decoration-none ml-3"
+                                download>Download CV</a>
 
                         </div>
                     </div>
@@ -231,7 +243,7 @@
                 <h2 class="header text-light text-center">Services</h2>
             </div>
             <div class="row mb-5">
-                <div class="col-4">
+                <div class="col-12 col-md-4">
                     <div class="card mb-3 mt-3">
                         <i class="fas fa-paint-brush fa-lg"></i>
                         <div class="card-content">
@@ -240,7 +252,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-md-4">
                     <div class="card mb-3 mt-3">
                         <i class="fas fa-laptop fa-lg"></i>
                         <div class="card-content">
@@ -250,7 +262,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-md-4">
                     <div class="card mb-3 mt-3">
                         <i class="fab fa-react fa-lg"></i>
                         <div class="card-content">
@@ -261,7 +273,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-4">
+                <div class="col-12 col-md-4">
                     <div class="card mb-3 mt-3">
                         <i class="fas fa-code fa-lg"></i>
                         <div class="card-content">
@@ -272,7 +284,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-md-4">
                     <div class="card mb-3 mt-3">
                         <i class="fas fa-tools fa-lg"></i>
                         <div class="card-content">
@@ -282,7 +294,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-md-4">
                     <div class="card mb-3 mt-3">
                         <i class="fas fa-clock fa-lg"></i>
                         <div class="card-content">
@@ -297,26 +309,29 @@
         <!-- Contact Me -->
         <div class="container py-3 my-3 pt-3 mt-5" id="contact">
             <div class="row">
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                     <div class="contact-content">
                         <h2 class="header text-light">Contact</h2>
                         <h3 class="subheader text-light my-3">Got a problem to solve?</h3>
-                        <p class="text-justify text-light">Get your space suit ready and tell me your ideas to develop
+                        <p class="text-justify text-light" id="myText">Get your space suit ready and tell me your ideas
+                            to develop
                             your
                             dream application.</p>
-                        <div class="d-flex align-items-center mt-4">
-                            <i class="fas fa-envelope text-light me-2"></i>
-                            <span class="text-light contact-info">htootintwai1757@gmail.com</span>
+                        <div class="ml-mobile">
+                            <div class="d-flex align-items-center mt-4">
+                                <i class="fas fa-envelope text-light me-2"></i>
+                                <span class="text-light contact-info">htootintwai1757@gmail.com</span>
+                            </div>
+                            <div class="d-flex align-items-center mt-2">
+                                <i class="fas fa-phone-alt text-light me-2"></i>
+                                <span class="text-light contact-info">+95 9881657311</span>
+                            </div>
+                            <div class="d-flex align-items-center mt-2">
+                                <i class="fas fa-map-marker-alt text-light me-2"></i>
+                                <span class="text-light ms-1 contact-info">Yangon, Myanmar</span>
+                            </div>
                         </div>
-                        <div class="d-flex align-items-center mt-2">
-                            <i class="fas fa-phone-alt text-light me-2"></i>
-                            <span class="text-light contact-info">+95 9881657311</span>
-                        </div>
-                        <div class="d-flex align-items-center mt-2">
-                            <i class="fas fa-map-marker-alt text-light me-2"></i>
-                            <span class="text-light ms-1 contact-info">Yangon, Myanmar</span>
-                        </div>
-                        <div class="social-icons mt-4 justify-content-start">
+                        <div class="social-icons mobile-sci mt-4 justify-content-start">
                             <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
                             <a href="https://github.com/htootintwai" class="social-icon"><i
                                     class="fab fa-github"></i></a>
@@ -324,7 +339,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                     <div class="contact-form">
                         <form id="contact-form">
                             <div class="mb-3">
@@ -404,11 +419,11 @@
         <!-- FOOTER -->
         <div class="container pb-3 mb-3" id="footer">
             <hr class="white-line-separator">
-            <footer>
-                <div class="footer-left text-light">
+            <footer class="d-flex">
+                <div class="footer-left text-light ml-30">
                     <span>© 2023 Htoo Tint Wai. All Rights Reserved.</span>
                 </div>
-                <div class="footer-right">
+                <div class="footer-right ml-80">
                     <a href="mailto:htootintwai1757@gmail.com" target="_blank" class="social-icon"><i
                             class="fas fa-envelope"></i></a>
                     <a href="https://www.instagram.com/htoo_tint_wai/" target="_blank" class="social-icon"><i
